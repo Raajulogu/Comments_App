@@ -1,38 +1,49 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head-bar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff; /* Adjust the background color as needed */
+  z-index: 1000;
+  width: 100%;
+  padding-top:20px ;
+  box-shadow: 2px 3px 5px 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-container {
+  margin-top: 64px; /* Adjust this margin to match the height of your header */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.comments-container {
+  padding-top: 100px; /* Add some padding to the top of the comments container to prevent content from being hidden under the fixed header */
+}
+
+.add-btn-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 25%;
+  margin: 25px;
+}
+.comments{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 1%;
 }
-
-.App-link {
-  color: #61dafb;
+.card-body{
+  text-align: justify;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-action{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
